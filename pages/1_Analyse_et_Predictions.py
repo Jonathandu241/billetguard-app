@@ -24,7 +24,7 @@ st.markdown("""
 st.title("📊 Analyse & Prédictions")
 
 # ----- RÉCUP SESSION (définie à l'accueil) -----
-api_url    = st.session_state.get("api_url", "http://127.0.0.1:8000")
+api_url    = st.session_state.get("api_url", "https://billetguard-api-production.up.railway.app/")
 input_df   = st.session_state.get("input_df", None)       # CSV validé et colonnes normalisées
 input_bytes = st.session_state.get("input_bytes", None)   # binaire pour appeler l'API
 
